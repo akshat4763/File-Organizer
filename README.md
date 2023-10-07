@@ -1,2 +1,2 @@
 # File-Organizer-1.0
-a program which can be used to organize any sort of files based on their extension into a folder named accordingly.
+A program which can be used to organize any sort of files based on their extension into a folder named accordingly.

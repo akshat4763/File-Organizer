@@ -1,66 +1,23 @@
-File-Manager
-=============
+# File-Organizer
 
-This tool is the **Essential**  item which is rendered on GitHub.com:
+This tool is **essential** for managing and organizing your files and folders. It helps declutter junk and optimizes storage space efficiently.
 
-1. `File-Manager` selects an _underlying library_ to convert the raw markup to HTML. See the list of [supported markup formats](#markups) below.
-2. The HTML is sanitized, aggressively removing things that could harm you and your kin—such as `script` tags, inline-styles, and `class` or `id` attributes.
+## Features
 
-
-Please note that **only the first step** is covered by this gem — the rest happens on GitHub.com.  In particular, `markup` itself does no sanitization of the resulting HTML, as it expects that to be covered by whatever pipeline is consuming the HTML.
+1. **File-Organizer** uses underlying libraries to handle different file types and perform operations to clean up and organize your directories.
+2. The tool ensures safe operations, removing unnecessary files and optimizing storage without risking your important data.
 
 Please see our [contributing guidelines](CONTRIBUTING.md) before reporting an issue.
 
-Markups
--------
+## Supported Formats
 
-The following markups are supported.  The dependencies listed are required if
-you wish to run the library. You can also run `script/bootstrap` to fetch them all.
+The following file types are supported for organization. Ensure the required dependencies are installed if you wish to run the library. You can also run the provided script to fetch them all.
 
-* [.markdown, .mdown, .mkdn, .md](http://daringfireball.net/projects/markdown/) -- `gem install commonmarker` (https://github.com/gjtorikian/commonmarker)
-* [.textile](https://www.promptworks.com/textile) -- `gem install RedCloth` (https://github.com/jgarber/redcloth)
+- **All file types** -- The tool can handle various file types and perform operations to clean and organize them.
 
+## Installation
 
-Installation
------------
+Install the required dependencies and the File-Organizer tool using:
 
-```
-pip3 install File-Manager
-```
-
-or
-
-```
-bundle install
-```
-
-from this directory.
-
-Usage
------
-
-Basic form:
-
-```ruby
-require 'File-Manager'
-
-GitHub::Markup.render('README.markdown', "* One\n* Two")
-```
-
-More realistic form:
-
-```ruby
-require 'File-Manager'
-
-GitHub::Markup.render(file, File.read(file))
-```
-
-And a convenience form:
-
-```ruby
-require 'github/markup'
-
-GitHub::Markup.render_s(GitHub::Markups::MARKUP_MARKDOWN, "* One\n* Two")
-```
-
-
+```bash
+pip install file-organizer
